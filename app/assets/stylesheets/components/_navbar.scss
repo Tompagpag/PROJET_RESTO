@@ -12,10 +12,14 @@
   //width: 40px;
 }
 
+.navbar-brand {
+  color: $my_yellow !important;
+}
+
 .nav-link {
   color: $my_yellow !important;
   &:hover {
-    font-size: bold;
-    border-bottom: 1px solid $my_yellow;
+    font-weight: bold;
+    border-bottom: 2px solid $my_yellow;
   }
 }
