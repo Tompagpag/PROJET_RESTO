@@ -1,0 +1,13 @@
+.main-button {
+  text-decoration: none;
+  color: $my_yellow;
+  //border: 1px solid $my_black;
+  background-color: $my_gray;
+  border-radius: 20px;
+  padding: 10px;
+  &:hover {
+    text-decoration: none;
+    color: $my_white;
+    background-color: $my_black;
+  }
+}
