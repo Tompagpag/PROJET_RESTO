@@ -1,6 +1,7 @@
 .navbar-resto {
   justify-content: space-between;
-  background: #353238;
+  background: $my_gray;
+  height: 10vh;
 }
 
 .navbar-resto .navbar-collapse {
@@ -8,9 +9,13 @@
 }
 
 .navbar-resto .navbar-brand img {
-  width: 40px;
+  //width: 40px;
 }
 
 .nav-link {
-  color: #C1B4AE;
+  color: $my_yellow !important;
+  &:hover {
+    font-size: bold;
+    border-bottom: 1px solid $my_yellow;
+  }
 }

@@ -1,14 +1,14 @@
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Banner-picture.jpeg);;
-  background-size: cover;
-  background-position: center;
+  //background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-color: $my_yellow;
+  //opacity: 0.9;
   padding: 150px 0;
-  height: 40.5rem;
+  height: 70vh;
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: $my_white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
@@ -16,7 +16,7 @@
 
 .banner p {
   font-size: 20px;
-  color: white;
+  color: $my_white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
