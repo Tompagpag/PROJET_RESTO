@@ -1,13 +1,13 @@
 .main-button {
   text-decoration: none;
-  color: $my_white;
-  //border: 1px solid $my_black;
-  background-color: $my_gray;
+  color: $my_gray;
+  border: 2px solid $my_gray;
+  //background-color: $my_gray;
   border-radius: 20px;
   padding: 10px;
   &:hover {
     text-decoration: none;
     color: $my_yellow;
-    background-color: $my_black;
+    background-color: $my_gray;
   }
 }
