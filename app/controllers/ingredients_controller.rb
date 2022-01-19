@@ -6,7 +6,11 @@ class IngredientsController < ApplicationController
 
   def create
     @ingredient = Ingredient.new(ingredient_params)
-
+    if @ingredient.save
+      redirect_to recipes_path
+    else
+      render :new
+    end
   end
 
   private
