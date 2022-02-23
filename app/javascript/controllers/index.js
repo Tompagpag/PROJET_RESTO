@@ -11,3 +11,6 @@ const context = require.context("controllers", true, /_controller\.js$/)
 application.load(definitionsFromContext(context))
 // And this one
 application.register('abyme', AbymeController)
+
+import { AbymeController } from 'abyme';
+application.register('abyme', AbymeController);

@@ -44,6 +44,8 @@ class IngredientsController < ApplicationController
   end
 
   def ingredient_params
+
+    # Remove cost for recipe ?
     params.require(:ingredient).permit(:name,
                                        :amount_for_recipe,
                                        :cost_for_recipe,
