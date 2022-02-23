@@ -10,3 +10,11 @@
     background-color: $my_gray;
   }
 }
+
+.devise-new a {
+  color: $my_gray;
+  text-decoration: none !important;
+  &:hover {
+    color: $my_black;
+  }
+}

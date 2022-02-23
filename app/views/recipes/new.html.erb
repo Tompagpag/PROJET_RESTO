@@ -3,7 +3,7 @@
   <h1>Nouvelle recette</h1>
   <div class="flex">
     <%= simple_form_for @recipe do |f| %>
-      <%= f.input :name, label: "Nom de la recette"  %>
+      <%= f.input :name, label: "Nom de la recette", style: "background-color: #FAA916;"  %>
       <%= f.button :submit, class:"main-button" %>
     <% end %>
   </div>
