@@ -1,9 +1,15 @@
-
 <div class="container p-3">
   <h1>Nouvelle recette</h1>
   <div class="flex">
     <%= simple_form_for @recipe do |f| %>
-      <%= f.input :name, label: "Nom de la recette", style: "background-color: #FAA916;"  %>
+      <%= f.input :name, label: "Nom de la recette" %>
+
+      <%= f.abyme_for(:ingredients) do |abyme| %>
+        <%= abyme.records %>
+        <%= abyme.new_records %>
+        <%= add_associated_record(content: "Ajoute un ingrédient +", class: "main-button") %>
+      <% end %>
+
       <%= f.button :submit, class:"main-button" %>
     <% end %>
   </div>
