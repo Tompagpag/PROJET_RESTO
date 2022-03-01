@@ -40,7 +40,7 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name)
+    params.require(:recipe).permit(abyme_attributes, :name)
   end
 
   def set_recipe
