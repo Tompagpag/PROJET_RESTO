@@ -7,7 +7,7 @@
       <%= f.abyme_for(:ingredients) do |abyme| %>
         <%= abyme.records %>
         <%= abyme.new_records %>
-        <%= add_associated_record(content: "Ajoute un ingrédient +", class: "main-button") %>
+        <%= add_associated_record(content: "Ajoute un ingrédient +", html: {class: "main-button"}) %>
       <% end %>
 
       <%= f.button :submit, class:"main-button" %>
