@@ -1,4 +1,5 @@
-<div>
+<div id="abyme">
+  <%= f.hidden_field :_destroy %>
   <%= f.input :name %>
   <%= f.input :amount_for_recipe %>
   <%= f.input :unit_for_recipe %>
@@ -6,9 +7,7 @@
   <%= f.input :unit_of_order %>
   <%= f.input :cost_of_order %>
 
-  <%= f.hidden_field :_destroy %>
 
-  <%= remove_associated_record(tag: :div) do %>
-    <i class="fas fa-trash"></i>
-  <% end %>
+  <%= remove_associated_record(content: "-", html: { id: "delete-member" }) %>
+
 </div>
